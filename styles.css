@@ -11,12 +11,16 @@
     margin: 20px auto;
     padding: 48px;
     /* display: flex; */
-    background-color: red;
+    /* background-color: red; */
+    background-image: url("/images/4306962.jpg");
+    background-size: cover;
+
 }
 
 .resumeHeader {
     display: flex;
-    background-color: aqua;
+    color: #1b3964;
+    /* background-color: aqua; */
 }
 
 .resumeProfile{
@@ -33,6 +37,41 @@
     text-transform: uppercase;
     font-weight: 400;
 }
+
+.resumeFooter{
+    font-size: 14px;
+    
+}
+
+.resumeFooter h3{
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px 0 10px 0;
+    color: #1b3964;
+}
+
+.resumeFooter ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    color: #a7cac6;
+    font-weight: 600;
+}
+
+.resumeFooter ul li a{
+    text-decoration: none;
+    color: #a7cac6;
+}
+
+.resumeFooter ul li a:visited{
+    text-decoration: none;    
+}
+
+.resumeFooter ul li i{
+    color: #1b3964;
+}
+
+
 
 .resumeSummary{
     font-size: 12px;
