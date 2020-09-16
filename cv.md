@@ -11,9 +11,9 @@
 I was really curious about learning front-side development. I want to improve and to organize my dev skills, become Junior Frontend Developer and get a job. 
 
 ## Skills:
-**`beginer`** I can handle the basic features of the program, but you can’t do complicated tricks or troubleshoot problems yet.  |
-**`intermediate`** I can also troubleshoot and do some fancy tricks. But I might need to Google some functions or ask in forums from time to time.  |  
-**`proficient`**  I you can handle advanced functions and troubleshoot problems by examining things on my own.  |  
+**`beginer`** I can handle the basic features of the program, but you can’t do complicated tricks or troubleshoot problems yet.  
+**`intermediate`** I can also troubleshoot and do some fancy tricks. But I might need to Google some functions or ask in forums from time to time.   
+**`proficient`**  I you can handle advanced functions and troubleshoot problems by examining things on my own.  
 
 - HyperText Markup Language (HTML) **`intermediate`**  
 - Cascading Style Sheets (CSS) **`intermediate`**
