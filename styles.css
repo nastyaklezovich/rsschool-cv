@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #edc0bb;
+}
+
+.resume {
+    width: 800px;
+    height: auto;
+    margin: 20px auto;
+    padding: 48px;
+    /* display: flex; */
+    /* background-color: red; */
+    background-image: url("/images/4306962.jpg");
+    background-size: cover;
+    -webkit-box-shadow: 10px 10px 18px -7px rgba(0,0,0,0.5);
+    -moz-box-shadow: 10px 10px 18px -7px rgba(0,0,0,0.5);
+    box-shadow: 10px 10px 18px -7px rgba(0,0,0,0.5);
+}
+
+.resumeHeader {
+    display: flex;
+    color: #1b3964;
+    /* background-color: aqua; */
+}
+
+.resumeProfile{
+    margin: 40px 0 0 60px;
+}
+
+.resumeName {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.resumeJob{
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.resumeFooter{
+    font-size: 14px;
+    
+}
+
+.resumeFooter h3{
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px 0 10px 0;
+    color: #1b3964;
+}
+
+.resumeFooter ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    color: #a7cac6;
+    font-weight: 600;
+}
+
+.resumeFooter ul li a{
+    text-decoration: none;
+    color: #a7cac6;
+}
+
+.resumeFooter ul li a:visited{
+    text-decoration: none;    
+}
+
+.resumeFooter ul li i{
+    color: #1b3964;
+}
+
+.resumeSummary{
+    font-size: 12px;
+    margin: 40px 0 0 0;
+}
+
+.profilePhoto {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+}
+
+.resumeMain{
+    display: flex;
+    margin: 40px 0 20px 0;
+}
+
+.resumeSkills{
+    width: 352px;
+}
+
+.skillName{
+    width: 122px;
+    font-weight: 600;
+}
+
+.progress{
+    width: 180px;
+    height: 10px;
+    background: #0070a0;
+    border-radius: 10px;
+    box-shadow: none;
+    overflow: visible;
+}
+
+.progress .progress-bar{
+    background: #fff;
+    box-shadow: none;
+    border-radius: 0;
+    border-top-width: 10px;
+    border-style: dotted;
+    position: relative;
+    -webkit-animation: animate-positive 2s;
+    animation: animate-positive 2s; 
+    border-top-color: #ffdc38;
+}
+
+.progress .progress-value{
+    font-size: 12px;
+    font-weight: 600;
+    color: #1b3964;
+    position: absolute;
+    top: -26px;
+    right: -5px;
+}
+
+@-webkit-keyframes animate-positive{
+    0%{ width: 0; }
+}
+@keyframes animate-positive{
+    0%{ width: 0; }
+}
+
+.resumeSkills h3{
+    text-transform: uppercase;
+    color: #1b3964;
+    margin: 0 0 20px 0;
+}
+
+.resumeSkills ul{
+    color: #1b3964;
+    list-style-type: none;
+
+}
+
+.resumeSkills ul li{
+    display: flex;
+    margin: 10px 0 10px 0;
+}
+
+
+.resumeEducation{
+    width: 352px;
+    color: #1b3964;
+}
+
+.resumeEducation h3{
+    text-transform: uppercase;
+    color: #1b3964;
+    margin: 0 0 20px 0;
+}
+
+.resumeLanguages h3{
+    text-transform: uppercase;
+    color: #1b3964;
+    margin: 20px 0 20px 0;
+}
+
+.language{
+    display: flex;
+    color: #1b3964;
+}
+
+.languageName{
+    color: #1b3964;
+    font-weight: 600;
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.resumeEducation ul{
+    list-style-type: none;
+}
+
+.resumeEducation ul li{
+    display: flex;
+    margin: 10px 0 10px 0;
+}
+
+.yearsEducation{
+    width: 100px;
+    font-weight: 600;
+}
+
+.placeEducation{
+    width: 242px;
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+.placeEducation p{
+    font-size: 12px;
+    font-weight: 400;
+}
