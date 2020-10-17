@@ -14,7 +14,7 @@ body{
     height: auto;
     margin: 20px auto;
     padding: 48px;
-    background: url("/images/4306962.jpg");
+    background: url("images/4306962.jpg");
     background-size: cover;
     -webkit-box-shadow: 10px 10px 18px -7px rgba(0,0,0,0.5);
     -moz-box-shadow: 10px 10px 18px -7px rgba(0,0,0,0.5);
