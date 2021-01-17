@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: #edc0bb;
+    background-color: #a7a49f;
 }
 
 .resume {
@@ -14,17 +14,19 @@ body{
     height: auto;
     margin: 20px auto;
     padding: 48px;
-    background: url("/images/4306962.jpg");
+<<<<<<< HEAD:styless.css
+=======
+    background: url("images/4306962.jpg");
+>>>>>>> e68530cbff44c2d46aca4b02de74b9a55a456ad0:styles.css
     background-size: cover;
     -webkit-box-shadow: 10px 10px 18px -7px rgba(0,0,0,0.5);
     -moz-box-shadow: 10px 10px 18px -7px rgba(0,0,0,0.5);
     box-shadow: 10px 10px 18px -7px rgba(0,0,0,0.5);
-}
-
+} */
+/* 
 .resumeHeader {
     display: flex;
     color: #1b3964;
-    /* background-color: aqua; */
 }
 
 .resumeProfile{
@@ -207,4 +209,8 @@ body{
 .placeEducation p{
     font-size: 12px;
     font-weight: 400;
+<<<<<<< HEAD:styless.css
+} */
+=======
 }
+>>>>>>> e68530cbff44c2d46aca4b02de74b9a55a456ad0:styles.css

@@ -1,0 +1,194 @@
+@import "variables";
+@import "fonts";
+@import "lists";
+@import "links";
+
+:root {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $background_color;
+  font-family: "Lato", sans-serif;
+}
+
+.resume {
+  display: flex;
+  margin: 1rem auto;
+  max-width: 120rem;
+  box-shadow: 10px 10px 18px -7px rgba(0, 0, 0, 0.5);
+  &__left {
+    width: 30%;
+    background-color: $dark;
+    display: flex;
+    flex-direction: column;
+  }
+  &__right {
+    width: 70%;
+    background-color: $light;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6rem;
+  }
+  &__profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 3rem;
+    &-photo {
+      img {
+        height: 20rem;
+        width: 20rem;
+        border-radius: 100px;
+        border: 0.3rem solid $light;
+      }
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    .title {
+      @include h3();
+      &-light {
+        color: $light;
+      }
+      &-dark {
+        color: $dark;
+      }
+    }
+    .list {
+      @include reset-list();
+      &__item {
+        display: flex;
+        align-items: center;
+        padding-top: 2.5rem;
+        &-icon {
+          display: flex;
+          align-items: center;
+          i {
+            font-size: 3rem;
+            color: $light;
+          }
+        }
+        &-data {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          padding-left: 1rem;
+        }
+        .light {
+          color: $light;
+        }
+        .dark {
+          color: $dark;
+        }
+        &-title {
+          @include h4();
+        }
+        &-subtitle {
+          @include paragraph();
+        }
+        &-link {
+          @include reset-link();
+        }
+        &-years {
+          width: 20%;
+          @include paragraph();
+          color: $dark;
+        }
+        &-place {
+          @include paragraph();
+          color: $dark;
+        }
+      }
+    }
+    .skills__list {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 1rem;
+        row-gap: 1rem;
+        @include reset-list();
+        .skill__item{
+            color: $light;
+            @include paragraph();
+            border: 0.2rem solid $light;
+            padding: 0.5rem;
+        }
+    }
+    
+  }
+  &__title {
+    display: flex;
+    flex-direction: column;
+  }
+  &__name {
+    @include h2();
+  }
+  &__job {
+    @include subtitle();
+  }
+}
+
+.projects-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  padding: 2rem 0;
+  .project-card {
+    width: calc(100% / 2 - 2rem);
+    height: 25rem;
+    max-width: 30rem;
+    background: $light;
+    overflow: hidden;
+    position: relative;
+    @include reset-link();
+    &__image {
+        height: 65%;
+        filter: grayscale(100%);
+        background-size: cover; 
+        background-position: center;
+        &:hover{
+            filter: grayscale(0%);
+        }
+    }
+    &__text {
+        display: flex;
+        flex-direction: column;
+        height:35%;
+        padding: 0.5rem;
+        background-color: $dark;
+        color: $light;
+        .project-name{
+            @include paragraph();
+            text-align: center;
+            padding-bottom: 0.5rem;
+        }
+        .project-description{
+            @include h4();
+            text-align: justify;
+        }
+        .project-technology{
+            @include h4();
+        }
+    }
+  }
+
+}
