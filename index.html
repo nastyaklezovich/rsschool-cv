@@ -4,204 +4,327 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="scss/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/b1b1111252.js" crossorigin="anonymous"></script>
-    <title>CV</title>
+    <title>Resume/CV</title>
 </head>
 
 <body>
     <div class="resume">
-        <header class="resumeHeader">
-            <img src="images/DSC_0253.jpg" alt="profile photo" class="profilePhoto">
-            <div class="resumeProfile">
-                <div class="resumeName">Klezovich Anastasiya</div>
-                <div class="resumeJob">Junior frontend developer</div>
-                <div class="resumeSummary">I was really curious about learning frontend development. I want to improve
-                    and to organize my dev skills, become Junior Frontend Developer and get a job. </div>
+        <div class="resume__left">
+            <div class="resume__profile">
+                <div class="resume__profile-photo">
+                    <img src="images/DSC_0253.jpg" alt="profile__photo">
+                </div>
             </div>
-        </header>
-        <main class="resumeMain">
-            <div class="resumeSkills">
-                <h3>Skills</h3>
-                <ul>
-                    <li>
-                        <div class="skillName">
-                            HTML
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" style="width:70%;">
-                                <div class="progress-value">70%</div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="skillName">
-                            CSS
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" style="width:70%;">
-                                <div class="progress-value">70%</div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="skillName">
-                            Bootstrap
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" style="width:70%;">
-                                <div class="progress-value">70%</div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="skillName">JS</div>
-                        <div class="progress">
-                            <div class="progress-bar" style="width:60%;">
-                                <div class="progress-value">60%</div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="skillName">
-                            Angular 5
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" style="width:30%;">
-                                <div class="progress-value">30%</div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="skillName">
-                            Git
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" style="width:70%;">
-                                <div class="progress-value">70%</div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="skillName">
-                            DataBases (MySQL, PostgreSQL, MongoDB)
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" style="width:60%;">
-                                <div class="progress-value">60%</div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="skillName">
-                            Photoshop
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" style="width:80%;">
-                                <div class="progress-value">80%</div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="skillName">
-                            Figma
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" style="width:60%;">
-                                <div class="progress-value">60%</div>
-                            </div>
-                        </div>
-                    </li>
 
-                </ul>
-            </div>
-            <div>
-                <div class="resumeEducation">
-                    <h3>Education</h3>
-                    <ul>
-                        <li>
-                            <div class="yearsEducation">
-                                2016 - 2020
+            <div class="resume__content">
+                <div class="resume__item resume-info">
+                    <h3 class="title title-light">INFO</h3>
+                    <hr>
+                    <ul class="list">
+                        <li class="list__item">
+                            <div class="list__item-icon">
+                                <i class="fas fa-user"></i>
                             </div>
-                            <div class="placeEducation">
-                                B.E. - BSUIR
-                                <p>
-                                    Faculty of engineering and economics, Information systems and technologies (in
-                                    logistics)
-                                </p>
+                            <div class="list__item-data">
+                                <h4 class="list__item-title light">Name</h4>
+                                <div class="list__item-subtitle light">Klezovich Anastasiya</div>
                             </div>
                         </li>
-                        <li>
-                            <div class="yearsEducation">
-                                2020 - 2022
+                        <li class="list__item">
+                            <div class="list__item-icon">
+                                <i class="fas fa-phone"></i>
                             </div>
-                            <div class="placeEducation">
-                                M.E. - BSUIR
-                                <p>
-                                    Faculty of engineering and economics, e-business management
-                                </p>
+                            <div class="list__item-data">
+                                <h4 class="list__item-title light">Phone</h4>
+                                <a href="tel:+375291013788"
+                                    class="list__item-subtitle list__item-link light">+375291013788</a>
+                            </div>
+                        </li>
+                        <li class="list__item">
+                            <div class="list__item-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="list__item-data">
+                                <h4 class="list__item-title light">Email</h4>
+                                <a href="mailto: nastyaklezovich@gmail.com"
+                                    class="list__item-subtitle list__item-link light">nastyaklezovich@gmail.com</a>
+                            </div>
+                        </li>
+                        <li class="list__item">
+                            <div class="list__item-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="list__item-data">
+                                <h4 class="list__item-title light">Location</h4>
+                                <a href="https://goo.gl/maps/McybNSGJ2m6oUK5X9"
+                                    class="list__item-subtitle list__item-link light">Minsk</a>
                             </div>
                         </li>
                     </ul>
                 </div>
-    
-                <div class="resumeLanguages">
-                    <h3>
-                        Languages
-                    </h3>
-                    <div class="language">
-                        <div class="languageName">
-                            English
-                        </div>
-                        <div class="languageLevel">
-                            A2+ (Pre-Intermediat)
-                        </div>
-                    </div>
-                    <div class="language">
-                        <div class="languageName">
-                            French
-                        </div>
-                        <div class="languageLevel">
-                            A2+ (Pre-Intermediat)
-                        </div>
-            
-                    </div>
+                <div class="resume__item resume-social">
+                    <h3 class="title title-light">SOCIAL</h3>
+                    <hr>
+                    <ul class="list">
+                        <li class="list__item">
+                            <div class="list__item-icon">
+                                <i class="fab fa-skype"></i>
+                            </div>
+                            <div class="list__item-data">
+                                <h4 class="list__item-title light">Skype</h4>
+                                <a href="https://join.skype.com/invite/nWuADVi1EuQC"
+                                    class="list__item-subtitle list__item-link light">anastasia24121998</a>
+                            </div>
+                        </li>
+                        <li class="list__item">
+                            <div class="list__item-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="list__item-data">
+                                <h4 class="list__item-title light">LinkedIn</h4>
+                                <a href="http://www.linkedin.com/in/анастасия-клезович-678425193"
+                                    class="list__item-subtitle list__item-link light">anastasiyaklezovich</a>
+                            </div>
+                        </li>
+                        <li class="list__item">
+                            <div class="list__item-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="list__item-data">
+                                <h4 class="list__item-title light">Github</h4>
+                                <a href="https://github.com/nastyaklezovich"
+                                    class="list__item-subtitle list__item-link light">nastyaklezovich</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="resume__item resume-skills">
+                    <h3 class="title title-light">SKILLS</h3>
+                    <hr>
+                    <ul class="skills__list" style="margin-top: 1rem;">
+                        <li class="skill__item">
+                            HTML5
+                        </li>
+                        <li class="skill__item">
+                            CSS3
+                        </li>
+                        <li class="skill__item">
+                            SASS / LESS
+                        </li>
+                        <li class="skill__item">
+                            JavaScript
+                        </li>
+                        <li class="skill__item">
+                            VueJS
+                        </li>
+                        <li class="skill__item">
+                            Angular
+                        </li>
+                        <li class="skill__item">
+                            Webpack
+                        </li>
+                        <li class="skill__item">
+                            Git
+                        </li> 
+                        
+                        
+                    </ul>
+                </div>
+                <div class="resume__item resume-languages">
+                    <h3 class="title title-light">LANGUAGES</h3>
+                    <hr>
+                    <ul class="list">
+                        <li class="list__item">
+                            <div class="list__item-icon">
+                                <i class="fas fa-globe-europe"></i>
+                            </div>
+                            <div class="list__item-data">
+                                <h4 class="list__item-title language light">English</h4>
+                                <div class="list__item-subtitle light">Intermediate</div>
+                            </div>
+                        </li>
+                        <li class="list__item">
+                            <div class="list__item-icon">
+                                <i class="fas fa-globe-europe"></i>
+                            </div>
+                            <div class="list__item-data">
+                                <h4 class="list__item-title language light">Francais</h4>
+                                <div class="list__item-subtitle light">Pre-Intermediate</div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
+        </div>
+        <div class="resume__right">
+            <div class="resume__title">
+                <h2 class="resume__name">
+                    KLEZOVICH ANASTASIYA
+                </h2>
+                <h4 class="resume__job">
+                    Frontend Developer
+                </h4>
+            </div>
+            <div class="resume__item resume__education">
+                <h3 class="title title-dark">EDUCATION</h3>
+                <hr>
+                <ul class="list">
+                    <li class="list__item">
+                        <div class="list__item-years">
+                            2016 - 2020
+                        </div>
+                        <div class="list__item-data">
+                            <div class="list__item-title dark">
+                                B.E. - BSUIR
+                            </div>
+                            <div class="list__item-subtitle dark">
+                                Faculty of engineering and economics, Information systems and technologies
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list__item">
+                        <div class="list__item-years">
+                            2020 - 2022
+                        </div>
+                        <div class="list__item-data">
+                            <div class="list__item-title dark">
+                                M.E. - BSUIR
+                            </div>
+                            <div class="list__item-subtitle dark">
+                                Faculty of engineering and economics, e-business management
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list__item">
+                        <div class="list__item-years">
+                            2020 - 2021
+                        </div>
+                        <div class="list__item-data">
+                            <div class="list__item-title dark">
+                                RSSchool
+                            </div>
+                            <div class="list__item-subtitle dark">
+                                JS / FRONT-END
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="resume__item resume__portfolio">
+                <h3 class="title title-dark">PORTFOLIO</h3>
+                <hr>
+                <div class="projects-list">
+                    <a class="project-card" href="https://goofy-mahavira-344da1.netlify.app/#/">
+                        <div class="project-card__image"></div>
+                        <div class="project-card__text">
+                            <div class="project-name">
+                                COVID-19 dashboard
+                            </div>
+                            <div class="project-description">
+                                <!-- Team work <a href="https://github.com/hardzeichyksiarhei">hardzeichyksiarhei</a> -->
+                                The application for tracking the spread of COVID-19 in the world and in selected
+                                countries.
+                            </div>
+                            <div class="project-technology">
+                                Used technologies: VueJS, PrimeVue
+                                <p>
+                                    Team work with @hardzeichyksiarhei.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="project-card" href="https://nastyaklezovich-english-for-kids.netlify.app/">
+                        <div class="project-card__image" style="background-image:url(images/english-for-kids.png)">
+                        </div>
+                        <div class="project-card__text">
+                            <div class="project-name">
+                                English for kids
+                            </div>
+                            <div class="project-description">
+                                The application for learning English words for children.
+                            </div>
+                            <div class="project-technology">
+                                Used technologies: JS, CSS (SCSS), HTML
+                            </div>
+                        </div>
+                    </a>
 
+                    <a class="project-card"
+                        href="https://rolling-scopes-school.github.io/nastyaklezovich-JS2020Q3/momentum/">
+                        <div class="project-card__image" style="background-image:url(images/momentum.png)">
+                        </div>
+                        <div class="project-card__text">
+                            <div class="project-name">
+                                Momentum
+                            </div>
+                            <div class="project-description">
+                                The application shows the time and username, his goal for the current day.
+                            </div>
+                            <div class="project-technology">
+                                Used technologies: JS, CSS, HTML
+                            </div>
+                        </div>
+                    </a>
 
-        </main>
-        <footer class="resumeFooter">
-            <h3>Contact info</h3>
-            <ul>
-                <li>
-                    <span>
-                        <i class="fas fa-phone"></i>
-                        +375291013788
-                    </span>
-                </li>
-                <li>
-                    <span>
-                        <i class="fas fa-envelope"></i>
-                        <a href="mailto:nastyaklezovich@gmail.com">nastyaklezovich@gmail.com</a>
-                    </span>
-                </li>
-                <li>
-                    <span>
-                        <i class="fab fa-skype"></i>
-                        <a href="https://join.skype.com/invite/nWuADVi1EuQC">anastasiya24121998</a>
-                    </span>
-                </li>
-                <li>
-                    <span>
-                        <i class="fab fa-linkedin"></i>
-                        <a href="http://www.linkedin.com/in/анастасия-клезович-678425193">anastasiyaklezovich</a>
-                    </span>
-                </li>
-            </ul>
-        </footer>
+                    <a class="project-card"
+                        href="https://rolling-scopes-school.github.io/nastyaklezovich-JS2020Q3/shelter/pages/main/index.html">
+                        <div class="project-card__image" style="background-image:url(images/pets.png)">
+                        </div>
+                        <div class="project-card__text">
+                            <div class="project-name">
+                                Pets
+                            </div>
+                            <div class="project-description">
+                                Animal shelter website layout.
+                            </div>
+                            <div class="project-technology">
+                                Used technologies: JS, CSS, HTML
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="project-card"
+                        href="https://rolling-scopes-school.github.io/nastyaklezovich-JS2020Q3/gem-puzzle/">
+                        <div class="project-card__image" style="background-image:url(images/gem-puzzle.png)"></div>
+                        <div class="project-card__text">
+                            <div class="project-name">
+                                Gem Puzzle
+                            </div>
+                            <div class="project-description">
+                                Сlassic game - tag.
+                            </div>
+                            <div class="project-technology">
+                                Used technologies: JS, CSS, HTML
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="project-card"
+                        href="https://rolling-scopes-school.github.io/nastyaklezovich-JS2020Q3/virtual-keyboard/ ">
+                        <div class="project-card__image" style="background-image:url(images/keyboard.png)">
+                        </div>
+                        <div class="project-card__text">
+                            <div class="project-name">
+                                Virtual Keyboard
+                            </div>
+                            <div class="project-description">
+                                Virtual keyboard project with SpeechRecognition.
+                            </div>
+                            <div class="project-technology">
+                                Used technologies: JS, CSS, HTML
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
